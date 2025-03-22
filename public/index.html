@@ -4,10 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Hello Angela!</h1>
+
+    <!-- container must have sizing (-xs,sm,m,l,xxl,etc.) -->
+    <div class="container-sm"> 
+        <!-- overview, search icon, bell icon, hamburger btn -->
+         <!-- row is nested in the container (parent) -->
+        <div class="row"> 
+            <!-- row can have up to 12 cols MAX -->
+             <!-- col can have -# or no suffix for auto width adjustment by bootstrap -->
+            <div class="col overview-header">
+            <!-- <div class="col-6">     -->
+                Overview
+            </div>
+            <div class="col header-icons">
+            <!-- <div class="col-6">     -->
+                test
+
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+
+
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <img class="me-3" src="assets/images/logo.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text offcanvas-title" id="offcanvasRightLabel"><b>Dashboard Kit</b></span>
+                        </div>
+                        <!-- <div class="col-10">
+                        </div> -->
+                    </div>
+                </div>
+               
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid">
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/1. overview.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-overview-text">Overview</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/2. tickets.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Tickets</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/Vector.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Ideas</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/4. contacts.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Contacts</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/5. agents.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Agents</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/6. articles.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Articles</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/a_1. settings.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Settings</span>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-12 align-items-center">
+                            <img class="me-3" src="assets/images/a_2. subscription.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text">Subscription</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
     <!-- add js script tag for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

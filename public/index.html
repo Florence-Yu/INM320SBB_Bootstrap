@@ -13,27 +13,118 @@
     <div class="container-sm"> 
         <!-- overview, search icon, bell icon, hamburger btn -->
          <!-- row is nested in the container (parent) -->
-        <div class="row"> 
+        <div class="overview-row row mb-4"> 
             <!-- row can have up to 12 cols MAX -->
              <!-- col can have -# or no suffix for auto width adjustment by bootstrap -->
-            <div class="col overview-header">
+            <div class="col-8 overview-header d-flex align-items-center">
             <!-- <div class="col-6">     -->
-                Overview
+                <span class="overview-header">Overview</span>
             </div>
-            <div class="col header-icons">
+            <div class="col-4 header-icons d-flex align-items-center justify-content-end">
             <!-- <div class="col-6">     -->
-                test
-
+                <img class="me-3" src="assets/images/search.png" alt="" width="32px">
+                <img class="me-3" src="assets/images/new.png" alt="" width="32px">
+                <img class="" src="assets/images/menu_24dp_C5C7CD_FILL0_wght400_GRAD0_opsz24.png" alt="" width="32px" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             </div>
         </div>
-        <div class="row"></div>
-        <div class="row"></div>
+        <div class="avatar-row row mb-4">
+
+       
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <img class="me-3" src="assets/images/photo.png" alt="avatar" width="64px">
+                <span class="avatar-name" id="offcanvasRightLabel"><b>Jones Ferdinand</b></span>
+            </div>
+            <!-- <div class="col-10">
+            </div> -->
+       
+            
+        </div>
+        <div class="stats-row row g-3 mb-4">
+
+            <div class="col-6 p-0">
+                <div class="container">
+                    <div class="border p-3 rounded">
+                      <div class="row mb-2">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-text">Unresolved</b>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-number">60</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+         
 
 
+            <div class="col-6 p-0">
+                <div class="container">
+                    <div class="border p-3 rounded">
+                      <div class="row mb-2">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-text">Unresolved</b>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-number">60</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+
+            <div class="col-6 p-0">
+                <div class="container">
+                    <div class="border p-3 rounded">
+                      <div class="row mb-2">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-text">Unresolved</b>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-number">60</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+
+            <div class="col-6 p-0">
+                <div class="container">
+                    <div class="border p-3 rounded">
+                      <div class="row mb-2">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-text">Unresolved</b>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                          <b class="stats-number">60</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
 
 
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+        </div>
+        <div class="graph-row row mb-4"></div>
+        <!-- c5c7cd -->
 
+
+        <!-- <button class="btn btn-primary" type="button" >Toggle right offcanvas</button> -->
+
+
+        <!-- sidebar content -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
                 <div class="container">
@@ -57,50 +148,50 @@
                 <div class="container-fluid">
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/1. overview.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/1. overview.png" alt="" width="32px">
                             <span class="side-overview-text">Overview</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/2. tickets.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/2. tickets.png" alt="" width="32px">
                             <span class="side-icon-text">Tickets</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/Vector.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/Vector.png" alt="" width="32px">
                             <span class="side-icon-text">Ideas</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/4. contacts.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/4. contacts.png" alt="" width="32px">
                             <span class="side-icon-text">Contacts</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/5. agents.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/5. agents.png" alt="" width="32px">
                             <span class="side-icon-text">Agents</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/6. articles.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/6. articles.png" alt="" width="32px">
                             <span class="side-icon-text">Articles</span>
                         </div>
                     </div>
                     <hr>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/a_1. settings.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/a_1. settings.png" alt="" width="32px">
                             <span class="side-icon-text">Settings</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/a_2. subscription.png" alt="dashboard-kit-logo" width="32px">
+                            <img class="me-3" src="assets/images/a_2. subscription.png" alt="" width="32px">
                             <span class="side-icon-text">Subscription</span>
                         </div>
                     </div>

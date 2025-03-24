@@ -8,6 +8,54 @@
   font-weight: bolder;
 }
 
+.sidebar {
+  height: 100vh;
+  width: 150px;
+  background-color: #2d2f3b;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  position: fixed;
+}
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 60px 20px;
+  display: block;
+  font-size: 25px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.sidebar a:hover, .sidebar .active {
+  background-color: #404357;
+  border-left: 5px solid #5a67d8;
+}
+.sidebar .logo {
+  margin-bottom: 100px;
+  margin-right: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.side-overview-text.active {
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
 .offcanvas.offcanvas.offcanvas-start {
     background-color:  #363740;
 }

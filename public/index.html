@@ -4,380 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-
+  <body>
     <!-- container must have sizing (-xs,sm,m,l,xxl,etc.) -->
     <div class="container-sm"> 
         <!-- overview, search icon, bell icon, hamburger btn -->
          <!-- row is nested in the container (parent) -->
-        <div class="overview-row row mb-4"> 
+        <div class="overview-row row md-8"> 
             <!-- row can have up to 12 cols MAX -->
              <!-- col can have -# or no suffix for auto width adjustment by bootstrap -->
             <div class="col-8 overview-header d-flex align-items-center">
-            <!-- <div class="col-6">     -->
-                <h5 class="overview-header">Overview</h5>
+            <!-- <div class="col-8"> -->
             </div>
-            <div class="col-4 header-icons d-flex align-items-center justify-content-end">
-            <!-- <div class="col-6">     -->
-                <img class="me-3" src="assets/images/search.png" alt="" width="20px">
-                <img class="me-3" src="assets/images/new.png" alt="" width="20px">
-                <img class="" src="assets/images/menu_24dp_C5C7CD_FILL0_wght400_GRAD0_opsz24.png" alt="" width="20px" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
-            </div>
+            <div class="col-12 header-icons">
         </div>
-        <div class="avatar-row row mb-4">
+        <div class="avatar-row row md-8">
 
+        <div class="container mt-4"> 
+            <div class="custom-container">
+          </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-md-8">
+            <h5 class="overview-header">Overview</h5>
+          </div>
        
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <img class="me-3" src="assets/images/photo.png" alt="avatar" width="64px">
+            <div class="col-6 col-md-4 d-flex justify-content-end align-items-end">
+              <img class="me-4" src="../public/assets/images/search.png" alt="search" width="20px">
+              <img class="me-4" src="../public/assets/images/new.png" alt="new" width="20px">
+              <img class="me-4" src="../public/assets/images/menu_24dp_C5C7CD_FILL0_wght400_GRAD0_opsz24.png" alt="menu" width="20px" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                <img class="me-3" src="../public/assets/images/photo.png" alt="avatar photo" width="25px">
                 <span class="avatar-name" id="offcanvasRightLabel"><b>Jones Ferdinand</b></span>
             </div>
-            <!-- <div class="col-10">
+            <!-- <div class="col-12">
             </div> -->
-       
-            
+               
         </div>
-        <div class="stats-row row g-3 mb-4">
-
-            <div class="col-6 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-text">Unresolved</b>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-number">60</b>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
+        <div class="container mt-4">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div class="status-card">
+                <div class="status-text">Unresolved</div>
+                <div class="status-number">60</div>
+              </div>
             </div>
-         
-
-
-            <div class="col-6 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-text">Unresolved</b>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-number">60</b>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-            </div>
-
-            <div class="col-6 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-text">Unresolved</b>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-number">60</b>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-            </div>
-
-            <div class="col-6 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-text">Unresolved</b>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
-                          <b class="stats-number">60</b>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-            </div>
-
+            <div class="col-md-3">
+              <div class="status-card selected">
+                  <div class="status-text">Overdue</div>
+                  <div class="status-number">16</div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="status-card">
+                  <div class="status-text">Open</div>
+                  <div class="status-number">43</div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="status-card">
+                  <div class="status-text">On hold</div>
+                  <div class="status-number">64</div>
+              </div>
+          </div>
+      </div>
+    </div>
 
         </div>
-        <div class="graph-row row mb-4">
-
-            
-            <div class="col-12 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex">
-                          <b class="">Today's trends</b>
-                        </div>
+        <!-- Left Side - Graph - Title & Date -->
+        <div class="graph-stats col-md-8">
+          <div class="dashboard-card">
+              <div class="d-flex justify-content-between">
+                  <div>
+                      <div class="trend-header">Today's trends</div>
+                      <div class="trend-subtext">as of 25 May 2019, 09:41 PM</div>
+                  </div>
+                  <div>
+                    <div class="d-flex align-items-center legend">
+                      <div class="legend-item">
+                        <img class="me-3" src="assets/images/divider_1.png" alt="Today" class="divider">
+                        <span class="legend-color today"></span> Today
                       </div>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex">
-                          <span class="graph-date">as of 25 May 2019, 09:41 PM</span>
-                        </div>
-                      </div>
-
-                      <div class="row mb-2">
-                        <div class="col-12">
-                            <img class="me-3" src="assets/images/divider_1.png" alt="" width="">
-                            <span class="me-3">Today</span>
-                            <img class="me-3" src="assets/images/divider_2.png" alt="" width="">
-                            <span class="">Yesterday</span>
-                          </div>
-
-                      </div>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                            <img class="img-fluid" src="assets/images/full graph.png" alt="graph" width="">
-                        </div>
+                      <div class="legend-item">
+                        <img class="me-3" src="assets/images/divider_2.png" alt="Yesterday" class="divider">
+                        <span class="legend-color yesterday"></span> Yesterday
                       </div>
                     </div>
                   </div>
-                  
+                </div>
+              <canvas id="trendChart" height="250"></canvas>
+              <div class="row mb-2">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img class="img-fluid" src="assets/images/full graph.png" alt="graph" width="98%">
+                        </div>
+                      </div>
+                </div>
+         </div>
+        <!-- Right: Statistics Section -->
+        <div class="col-lg-4 d-flex align-items-start">
+          <div class="stats-box w-100">
+              <div class="stat-item">
+                  <div class="stat-title">Resolved</div>
+                  <div class="stat-value">449</div>
+              </div>
+              <hr class="divider">
+              <div class="stat-item">
+                  <div class="stat-title">Received</div>
+                  <div class="stat-value">426</div>
+              </div>
+              <hr class="divider">
+              <div class="stat-item">
+                  <div class="stat-title">Average first response time</div>
+                  <div class="stat-value">33m</div>
+              </div>
+              <hr class="divider">
+              <div class="stat-item">
+                  <div class="stat-title">Average response time</div>
+                  <div class="stat-value">3h 8m</div>
+              </div>
+              <hr class="divider">
+              <div class="stat-item">
+                  <div class="stat-title">Resolution within SLA</div>
+                  <div class="stat-value">94%</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- sidebar content -->        
+<div class="container mt-5">
+    <div class="row g-4">
+        <!-- Unresolved Tickets -->
+        <div class="col-md-6">
+            <div class="card-custom">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="header-text">Unresolved tickets</span>
+                    <a href="#" class="header-link">View details</a>
+                </div>
+                <p class="text-muted">Group: Support</p>
+                <div class="ticket-item">
+                    <span class="ticket-title">Waiting on Feature Request</span>
+                    <span class="text-muted">4238</span>
+                </div>
+                <div class="ticket-item">
+                    <span class="ticket-title">Awaiting Customer Response</span>
+                    <span class="text-muted">1005</span>
+                </div>
+                <div class="ticket-item">
+                    <span class="ticket-title">Awaiting Developer Fix</span>
+                    <span class="text-muted">914</span>
+                </div>
+                <div class="ticket-item">
+                    <span class="ticket-title">Pending</span>
+                    <span class="text-muted">281</span>
+                </div>
             </div>
-         
-            
-
-
-
-
         </div>
 
-
-        <div class="graph-stats row mb-4">
-
-            <div class="col-12 p-0">
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <span class="graph-stats-text">Resolved</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <b class="graph-stats-number">449</b>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <span class="graph-stats-text">Received</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <b class="graph-stats-number">426</b>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <span class="graph-stats-text">Average first response time</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <b class="graph-stats-number">33m</b>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <span class="graph-stats-text">Average response time</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <b class="graph-stats-number">3h 8m</b>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-center">
-                          <span class="graph-stats-text">Resolution within SLA</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <b class="graph-stats-number">94%</b>
-                          </div>
-                      </div>
-                    
+        <!-- Tasks Section -->
+        <div class="col-md-6">
+            <div class="card-custom">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="header-text">Tasks</span>
+                    <a href="#" class="header-link">View all</a>
+                </div>
+                <p class="text-muted">Today</p>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-muted">Create new task</span>
+                    <img class="" src="../public/assets/images/plus.png" alt="plus-icon" width="32px">
+                    <div class="add-task-btn">
                     </div>
-                  </div>
-                  
-            </div>
-         
-
-
-
-        </div>
-
-        <div class="tickets row mb-4">
-            
-
-            <div class="col-12 p-0">
-
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                          <span class=""><b>Unresolved tickets</b></span>
-                          <span style="color:#3751FF">View details</span>
+                </div>
+                <div class="task-item">
+                    <div class="d-flex align-items-center">
+                        <div class="task-checkbox">
+                          <img class="me-1" src="../public/assets/images/inactive.png" alt="plus-icon" width="5px">
                         </div>
-                      
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col-12 d-flex justify-content-between">
-                          <span class="group-support">Group: Support</span>
-                        </div>
-                      
-                      </div>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Waiting on Feature Request</span>
-                            <span>4238</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Awaiting Customer Response</span>
-                            <span>1005</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Awaiting Developer Fix</span>
-                            <span>914</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Pending</span>
-                            <span>281</span>
-                          </div>
-                      </div>
-                      
-                     
-                    
-                    
+                        <span class="task-title ms-2">Finish ticket update</span>
                     </div>
-                  </div>
-
-            </div>
-
-           
-
-
-
-
-        </div>
-
-        <div class="tasks row mb-4">
-
-            <div class="col-12 p-0">
-
-                <div class="container">
-                    <div class="border p-3 rounded">
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                          <span class=""><b>Tasks</b></span>
-                          <span style="color:#3751FF">View all</span>
+                    <span class="task-badge urgent">URGENT</span>
+                </div>
+                <div class="task-item">
+                    <div class="d-flex align-items-center">
+                        <div class="task-checkbox">
+                          <img class="me-1" src="../public/assets/images/inactive.png" alt="plus-icon" width="5px">
                         </div>
-                      
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col-12 d-flex justify-content-between">
-                          <span class="group-support">Today</span>
-                        </div>
-                      
-                      </div>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between align-items-center">
-                            <span style="color: #A4A6B3" class="">Create new task</span>
-                            <img class="" src="assets/images/plus.png" alt="plus-icon" width="32px">
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-9 d-flex align-items-center">
-                            <img class="me-1" src="assets/images/inactive.png" alt="plus-icon" width="16px">
-                            <span class="">Finish ticket update</span>
-                        </div>
-                        <div class="col-3 d-flex">
-                            <img class="" src="assets/images/warning.png" alt="plus-icon" width="100%">
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-9 d-flex align-items-center">
-                            <img class="me-1" src="assets/images/inactive.png" alt="plus-icon" width="16px">
-                            <span class="">Create new ticket example</span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
-                            <img class="" src="assets/images/success.png" alt="plus-icon" width="" height="24px">
-                        </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-9 d-flex align-items-center">
-                            <img class="me-1" src="assets/images/active.png" alt="plus-icon" width="16px">
-                            <span class="">Update ticket report</span>
-                        </div>
-                        <div class="col-3 d-flex">
-                            <img class="" src="assets/images/gray.png" alt="plus-icon" width="100%">
-                        </div>
-                      </div>
-                      <hr>
-                      <!-- <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Awaiting Developer Fix</span>
-                            <span>914</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-2">
-                        <div class="col-12 d-flex justify-content-between">
-                            <span class="">Pending</span>
-                            <span>281</span>
-                          </div>
-                      </div> -->
-                      
-                     
-                    
-                    
+                        <span class="task-title ms-2">Create new ticket example</span>
                     </div>
-                  </div>
-
+                    <span class="task-badge new">NEW</span>
+                </div>
+                <div class="task-item">
+                    <div class="d-flex align-items-center">
+                        <div class="task-checkbox checked">
+                          <img class="me-1" src="../public/assets/images/active.png" alt="plus-icon" width="18px">
+                        </div>
+                        <span class="task-title ms-2">Update ticket report</span>
+                    </div>
+                    <span class="task-badge default">DEFAULT</span>
+                </div>
             </div>
-
-
-
-
-
-
         </div>
+    </div>
+</div>
 
 
         <!-- sidebar content -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
             <div class="offcanvas-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center align-items-center">
-                            <img class="me-3" src="assets/images/logo.png" alt="dashboard-kit-logo" width="32px">
-                            <span class="side-icon-text offcanvas-title" id="offcanvasRightLabel"><b>Dashboard Kit</b></span>
+                            <img class="me-3" src="../public/assets/images/logo.png" alt="dashboard-kit-logo" width="32px">
+                            <span class="side-icon-text offcanvas-title" id="offcanvasStartLabel"><b>Dashboard Kit</b></span>
                         </div>
                         <!-- <div class="col-10">
                         </div> -->
@@ -386,7 +225,7 @@
                
             
 
-                    <img data-bs-dismiss="offcanvas" aria-label="Close" class="" src="assets/images/close_24dp_A4A6B3_FILL0_wght400_GRAD0_opsz24.png" alt="closebtn" width="32px">
+                <img data-bs-dismiss="offcanvas" aria-label="Close" class="" src="assets/images/close_24dp_A4A6B3_FILL0_wght400_GRAD0_opsz24.png" alt="closebtn" width="32px">
 
                
             </div>
@@ -394,68 +233,64 @@
                 <div class="container-fluid">
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/1. overview.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/1. overview.png" alt="Overview" width="32px">
                             <span class="side-overview-text">Overview</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/2. tickets.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/2. tickets.png" alt="Tickets" width="32px">
                             <span class="side-icon-text">Tickets</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/Vector.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/Vector.png" alt="Vector" width="32px">
                             <span class="side-icon-text">Ideas</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/4. contacts.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/4. contacts.png" alt="Contacts" width="32px">
                             <span class="side-icon-text">Contacts</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/5. agents.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/5. agents.png" alt="Agents" width="32px">
                             <span class="side-icon-text">Agents</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/6. articles.png" alt="" width="32px">
+                            <img class="me-3" src="assets/images/6. articles.png" alt="Articles" width="32px">
                             <span class="side-icon-text">Articles</span>
                         </div>
                     </div>
                     <hr>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/a_1. settings.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/a_1. settings.png" alt="Settings" width="32px">
                             <span class="side-icon-text">Settings</span>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col-12 align-items-center">
-                            <img class="me-3" src="assets/images/a_2. subscription.png" alt="" width="32px">
+                            <img class="me-3" src="../public/assets/images/a_2. subscription.png" alt="Subscription" width="32px">
                             <span class="side-icon-text">Subscription</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+        <div class="container mt-5 mb-5">
+          <div class="row g-4">
+              <!-- Content here -->
+          </div>
+      </div>
     </div>
-
-
-
-
-
-
-
-
 
     <!-- add js script tag for bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

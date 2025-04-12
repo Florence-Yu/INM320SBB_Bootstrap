@@ -1,0 +1,44 @@
+{
+    "articles": [
+      {
+        "id": 1,
+        "title": "5 Habits of Highly Productive People",
+        "author": "Laura Kim",
+        "publishedAt": "2025-04-10T09:30:00Z",
+        "summary": "Discover daily habits that top performers swear by to stay focused and efficient.",
+        "tags": ["productivity", "work habits", "time management"],
+        "readingTime": "4 min",
+        "thumbnail": "./assets/images/habits.jpg"
+      },
+      {
+        "id": 2,
+        "title": "How to Beat Procrastination at Work",
+        "author": "James Nguyen",
+        "publishedAt": "2025-04-08T14:00:00Z",
+        "summary": "Here are actionable tips to overcome procrastination.",
+        "tags": ["motivation", "focus", "behavior"],
+        "readingTime": "6 min",
+        "thumbnail": "./assets/images/Procrastination.jpg"
+      },
+      {
+        "id": 3,
+        "title": "10 Remote Work Tools You Should Know",
+        "author": "Amira Patel",
+        "publishedAt": "2025-04-05T11:15:00Z",
+        "summary": "These tools will level up your remote work game.",
+        "tags": ["remote work", "tools", "apps"],
+        "readingTime": "5 min",
+        "thumbnail": "./assets/images/remote.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Set Healthy Boundaries at Work",
+        "author": "Daniel Reyes",
+        "publishedAt": "2025-04-02T08:45:00Z",
+        "summary": "Learn how to protect your time and energy without feeling guilty.",
+        "tags": ["mental health", "boundaries", "communication"],
+        "readingTime": "3 min",
+        "thumbnail": "./assets/images/Boundaries.jpg"
+      }
+    ]
+  }  

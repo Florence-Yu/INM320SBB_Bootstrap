@@ -1,4 +1,6 @@
 {
+  "title": "Learn Javascript",
+  "img": "https://via.placeholder.com/150",
   "name": "inm320sbb_bootstrap",
   "version": "1.0.0",
   "main": "index.js",
@@ -146,5 +148,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Use Bootstrap to build responsive, mobile-first websites."
 }

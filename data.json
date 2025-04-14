@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Kyoto, Japan",
+      "description": "Experience ancient temples, cherry blossoms, and traditional tea houses.",
+      "img": "https://unsplash.com/photos/a-pagoda-on-top-of-a-hill-with-trees-in-the-foreground-YbcX7QktfjA"
+    },
+    {
+      "title": "Santorini, Greece",
+      "description": "Famous for its whitewashed houses and breathtaking sunset views.",
+    "img": "https://unsplash.com/photos/white-and-blue-concrete-building-near-body-of-water-during-daytime-vF0l0bqLRKY"
+    },
+    {
+        "title": "Banff, Canada",
+        "description": "Explore turquoise lakes, mountains, and picturesque landscapes.",
+        "img": "https://source.unsplash.com/featured/?banff,canada"
+    }
+  ]
+  
